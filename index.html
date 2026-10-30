@@ -58,6 +58,7 @@ p.copy{font-size:clamp(15px,1.3vw,18px);line-height:1.7;color:#d6d6d4;max-width:
 /* split */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 /* section */
+.mobile-only{display:none}
 .tap-hint{font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--amp);margin-bottom:6px;font-weight:500;display:inline-flex;align-items:center;gap:7px}
 .tap-hint::before{content:"\2295";font-size:15px}
 .cat-label{font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--amp);font-weight:600;margin:26px 0 12px;display:flex;align-items:center;gap:12px}
@@ -86,6 +87,7 @@ p.copy{font-size:clamp(15px,1.3vw,18px);line-height:1.7;color:#d6d6d4;max-width:
 .mobile-nav button:disabled{background:#2a2a2a;color:#666}
 .mobile-nav .counter{font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:2px;color:var(--grey)}
 @media(max-width:860px){
+  .mobile-only{display:block}
   .slide{padding:64px 6vw 48px;min-height:auto;justify-content:flex-start}
   #cover{grid-template-columns:1fr!important;grid-template-rows:auto auto!important;min-height:auto}
   .cover-photo-side{order:-1;aspect-ratio:16/11}
@@ -138,6 +140,7 @@ p.copy{font-size:clamp(15px,1.3vw,18px);line-height:1.7;color:#d6d6d4;max-width:
       <div class="imgph"><img src="images/tee-united-blue.jpg" alt="United by Music tee"></div>
       <div class="imgph"><img src="images/tee-rocker-blk.jpg" alt="Art tee"></div>
       <div class="imgph"><img src="images/tee-2.jpg" alt="Art tee"></div>
+      <div class="imgph mobile-only"><img src="images/tee-mansbest-blue-flat.jpg" alt="A Man's Best Friend tee"></div>
     </div>
     </div>
   </div>
